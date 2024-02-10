@@ -1,11 +1,10 @@
 import { StaticImage } from 'gatsby-plugin-image';
-import { ChevronRight, LockDesktop, LockShield, Megaphone, Sparkles } from 'gthibaud-icons-react';
+import { ChevronRight, LockDesktop, Megaphone, MegaphoneFill, Sparkles } from 'gthibaud-icons-react';
 import { Toaster } from 'react-hot-toast';
 import { ButtonUnstyled } from '../components/Button/unstyled';
 import { Columns } from '../components/Container/Columns';
 import { MainContainer } from '../components/Container/Main';
 import { TiltingContainer } from '../components/Container/Titling';
-import { EmailForm } from '../components/EmailForm';
 import { FAQ } from '../components/FAQ';
 import { Feature } from '../components/Feature';
 import { Footer } from '../components/Footer';
@@ -26,12 +25,10 @@ const Main = () => {
         <div className="flex flex-col align-center">
             <Header />
             <MainContainer>
-                <BigTitle>Communiquez avec impact</BigTitle>
+                <BigTitle>Communiquez avec <u>impact</u></BigTitle>
                 <SubTitle>
                     <span>
-                        We backup your Airtable workspaces
-                        <br />
-                        to secure things that matter
+                        Ensemble, propulsons votre événement outdoor sur le web et les réseaux sociaux.
                         <Sparkles className="fill-palettePurple" />
                     </span>
                 </SubTitle>
@@ -46,13 +43,12 @@ const Main = () => {
                 </div>
                 <SectionTitle>
                     <span>
-                        Secure things that matter
-                        <LockShield className="fill-paletteRed" />
+                        Rendez-vous visible
+                        <MegaphoneFill className="fill-paletteRed" />
                     </span>
                 </SectionTitle>
                 <SubTitle>
-                    Would you be able to keep your business running if you lost access to Airtable
-                    tomorrow morning?
+                    Faites du bruit ! Votre évènement mérite d'être connu et partagé.
                 </SubTitle>
                 <CardSection>
                     <Problem
@@ -65,8 +61,8 @@ const Main = () => {
                                 backgroundColor={BACKGROUND_DEFAULT}
                             />
                         }
-                        title="Crucial data"
-                        description="Your most important data are stored in Airtable: customers, activity, strategy, etc."
+                        title="Référencement"
+                        description="Rendze votre évènement à la portée de chacun en quelques clics."
                     />
                     <Problem
                         image={
@@ -78,8 +74,8 @@ const Main = () => {
                                 backgroundColor={BACKGROUND_DEFAULT}
                             />
                         }
-                        title="Critical risk"
-                        description="Mistakes can happen: deleting an access, forgetting to renew a license: 0 risk don’t exists."
+                        title="La bonne information"
+                        description="Partagez les informations essentielles et à jour."
                     />
                     <Problem
                         image={
@@ -91,13 +87,13 @@ const Main = () => {
                                 backgroundColor={BACKGROUND_DEFAULT}
                             />
                         }
-                        title="Don’t depend on Airtable"
-                        description="Don't let your business, your studies or your life depend on Airtable, mitigate the risk."
+                        title="Dans l'ère du temps"
+                        description="Site web, réseaux sociaux, emails... atteignez chacun."
                     />
                 </CardSection>
                 <SectionTitle>
                     <span>
-                        We backup every piece of data in a secure vault
+                        Nous partageons notre expertise
                         <LockDesktop className="fill-paletteBlue" />
                     </span>
                 </SectionTitle>
@@ -112,12 +108,10 @@ const Main = () => {
                             layout="fixed"
                         />
                     }
-                    title="Automated backups, simple as that"
+                    title="Visibilité en ligne"
                     description={
                         <>
-                            Connect your workspaces to Airtable Time Machine and that's it! We'll
-                            take care of backing up all your data at regular intervals, and alert
-                            you if an error occurs.
+                            Nous créons votre site internet à votre image, parfaitement référencé sur Google et les calendriers sportifs. Nous vous accompagnons pour frapper fort sur les réseaux sociaux et par email.
                         </>
                     }
                 />
@@ -132,8 +126,8 @@ const Main = () => {
                             layout="fixed"
                         />
                     }
-                    title="High-level safety and resilience "
-                    description="Airtable Time Machine encrypts all backups and exchanges between Airtable APIs and our system. We offer AES-256 encryption for all backups, making it impossible for us to decrypt them, even by us."
+                    title="Stratégie gagnante"
+                    description="Vous n'avez pas la compétence ou le temps pour gérer votre communication ? Nous définissons et appliquons la meilleure stratégie de communication jour par jour."
                     inversedDirection
                 />
                 <Feature
@@ -147,19 +141,19 @@ const Main = () => {
                             layout="fixed"
                         />
                     }
-                    title="Manage backups, restore data anytime"
-                    description="Thanks to the administration portal, you can define your backup and data retention strategies. In the blink of an eye, you can view your backups, go back in time and restore older versions."
+                    title="Des outils pour vous faire gagner du temps"
+                    description="Nous intégrons sur votre site des modules d'inscription, gestion des participants et affichage des résultats en quelques clics. Comptez sur nos outils de communication opérationnelle pour simplifier l'organisation de votre évènement."
                 />
-                <SectionTitle>Our plans</SectionTitle>
+                <SectionTitle>Nos tarifs (sans astérisques)</SectionTitle>
                 <SubTitle>
-                    No commitments or hidden costs,
-                    <br /> we have plans for everyone!
+                    Pas d'engagement ou de coûts cachés
+                    <br /> nous avons une solution pour chaque budget !
                 </SubTitle>
                 <br />
                 <PlanSection>
                     <Plan
-                        to="/#download"
-                        title="Monthly backup"
+                        to="/#contact"
+                        title="Site web"
                         image={
                             <StaticImage
                                 src="../../static/images/monthly.png"
@@ -168,12 +162,12 @@ const Main = () => {
                                 placeholder="none"
                             />
                         }
-                        description="Ideal for individuals, students, or families that want to stay zen"
-                        price="from 5$ / month"
+                        description="Nous créons, hébergeons et référençons votre site internet : exemple."
+                        price="200€"
                     />
                     <Plan
-                        to="/#download"
-                        title="Weekly backup"
+                        to="/#contact"
+                        title="Réseaux sociaux"
                         image={
                             <StaticImage
                                 src="../../static/images/weekly.png"
@@ -182,12 +176,12 @@ const Main = () => {
                                 placeholder="none"
                             />
                         }
-                        description="Ideal for startups who take care of their data on a limited budget"
-                        price="from 8$ / month"
+                        description="Nous publions pour vous sur les réseaux sociaux et par email, pour une communication efficace."
+                        price="50€ / publication"
                     />
                     <Plan
-                        to="/#download"
-                        title="Daily backup"
+                        to="/#contact"
+                        title="Inscriptions & résultats"
                         image={
                             <StaticImage
                                 src="../../static/images/daily.png"
@@ -196,24 +190,23 @@ const Main = () => {
                                 placeholder="none"
                             />
                         }
-                        description="Ideal for SME that must guarantee high levels of service"
-                        price="from 20$ / month"
+                        description="Utilisez notre module d'inscription et de gestion des participants pour votre évènement."
+                        price="1€ +2% / participant"
                     />
                 </PlanSection>
                 <ButtonUnstyled
-                    to="/#download"
+                    to="/#contact"
                     ariaLabel="Student program"
                     className="flex justify-center"
                 >
                     <span className="text-paletteBlue fill-paletteBlue">
-                        Are you a student? Register with your university email address to get free
-                        access to monthly plan
+                        Besoin d'un devis sur mesure ? Contactez-nous pour en discuter
                         <ChevronRight />
                     </span>
                 </ButtonUnstyled>
                 <SectionTitle>
-                    <span id="download">
-                        Join Airtable Time Machine beta!
+                    <span id="contact">
+                        Discutons de votre projet !
                         <Sparkles className="fill-palettePurple" />
                     </span>
                 </SectionTitle>
@@ -221,10 +214,13 @@ const Main = () => {
                     <Columns columnsNumber={2}>
                         <div className="flex flex-col flex-1 gap-4">
                             <Body>
-                                Be the first to benefit from access to Airtable Time Machine by
-                                joining the waiting list.
+                                Contactez Grégoire pour échanger sur votre projet et vous étudier comment Skovel pourra vous accompagner au mieux.
                             </Body>
-                            <EmailForm />
+                            <Body>
+                                Email: {' '}
+                                <a href="mailto:gregoire@skovel.com" className="text-paletteBlue fill-paletteBlue"><u>gregoire@skovel.com</u></a>
+                            </Body>
+                            {/* <EmailForm /> */}
                         </div>
                         <div className="flex-1">
                             <TiltingContainer>
@@ -246,27 +242,18 @@ const Main = () => {
                     </span>
                 </SectionTitle>
                 <FAQ
-                    question="Can I save the backups on my own storage?"
-                    answer="Backup to your own storage will be available in autumn 2023. We plan to make it possible to export data to Google Drive. In the meantime, you should know that Airtable Time Machine hosts your data in a fully encrypted (AES 256) manner, making all your data unreadable, even by us."
+                    question="Quels services proposez-vous ?"
+                    answer="Notre gamme de services s'étend de la communication sur votre course aux opérations d'organisations. Nous pouvons mettre à disposition plusieurs outils pour vous aider à gérer votre évènement : système de communication avec les participants, bénévoles et partenaires (via mail, SMS de dernière minute, etc.), gestion des inscriptions, gestion des résultats, etc."
                 />
                 <FAQ
-                    question="Where are backups hosted?"
-                    answer="Backups are hosted at AWS on S3 spaces, fully encrypted using the AES 256 algorithm."
-                />
-                <FAQ
-                    question="Is there any limit on the number of backups?"
-                    answer="No, Airtable Time Machine does not limit the number of backups. You can keep as many backups as you want, for as long as you want. We will soon offer the possibility to define a retention policy to automatically delete backups after a certain period of time."
-                />
-                <FAQ
-                    question="Who's behind the project?"
+                    question="Qui sommes nous ?"
                     answer={
                         <>
-                            Airtable Time Machine is developed by Creastel Labs, a project led by
-                            Grégoire Thibaud and Jean Haberer. Don't hesitate to{' '}
-                            <u>
-                                <a href="mailto:gregoire@creastel.com">contact</a>
+                            Skovel est une agence créée par Grégoire Thibaud, fondateur de  <u>
+                                <a href="https://creastel.com" target='_blank'>Creastel</a>
+                            </u>{' '} passionné de course à pied et de numérique. Discutons sur <u>
+                                <a href="https://www.linkedin.com/in/gregoire-thibaud/" target='_blank'>LinkedIn</a>
                             </u>{' '}
-                            us.
                         </>
                     }
                 />
@@ -283,10 +270,10 @@ export default Main;
 export const Head = () => (
     <>
         <html lang="en" />
-        <title>Airtable Time Machine – Making your Airtable data safe</title>
+        <title>Skovel – Communiquez avec impact !</title>
         <meta
             name="description"
-            content="Airtable time Machine backup your Airtable workspaces automatically to secure things that matter."
+            content="Skovel vous accompagne dans la mise en place de la communication de votre course outdoor. Site web, réseaux sociaux, emails... discutons de votre projet !"
         />
         <meta charSet="utf-8" />
     </>

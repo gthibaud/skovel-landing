@@ -11,16 +11,16 @@ export const Header = () => {
                         ariaLabel="Home"
                     >
                         <p className="font-semibold text-xl text-left tracking-tight">
-                            Airtable Time Machine
+                            Skovel
                         </p>
                     </ButtonUnstyled>
                 </div>
                 <div className="flex justify-end shrink-0">
                     <Button
-                        to="/#download"
+                        to="/#contact"
                         className="bg-paletteBlue hover:bg-palettePurple rounded-md"
                     >
-                        Join the beta
+                        Contactez-nous !
                     </Button>
                 </div>
             </nav>

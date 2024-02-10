@@ -1,4 +1,4 @@
-import { PlusCircleBold } from 'gthibaud-icons-react';
+import { PlusCircle } from 'gthibaud-icons-react';
 import { FC, ReactNode, useRef, useState } from 'react';
 import { isBrowser } from '../../utils/browser';
 import { Body } from '../Typography/Body';
@@ -31,7 +31,7 @@ export const FAQ: FC<FAQProps> = ({ question, answer }) => {
             >
                 <div className="flex flex-row justify-between gap-4 w-full items-center">
                     <h3 className="text-xl font-medium text-primary">{question}</h3>
-                    <PlusCircleBold
+                    <PlusCircle
                         size={26}
                         className={`transition shrink-0`}
                         style={{
