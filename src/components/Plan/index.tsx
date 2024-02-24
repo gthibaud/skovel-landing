@@ -12,13 +12,15 @@ type PlanProps = {
     description: string;
     price: string;
     to: string;
+    target?: string;
 };
 
-export const Plan = ({ image, title, description, price, to }: PlanProps) => {
+export const Plan = ({ image, title, description, price, to, target }: PlanProps) => {
     return (
         <TiltingContainer className="flex-1 rounded-lg bg-surfaceSecondary border-strokePrimary border-2">
             <Link
                 to={to}
+                target={target}
                 className="rounded-lg flex flex-1 flex-col items-center gap-4 text-center  p-8 pb-6"
             >
                 <CardTitle>{title}</CardTitle>

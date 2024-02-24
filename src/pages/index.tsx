@@ -152,7 +152,8 @@ const Main = () => {
                 <br />
                 <PlanSection>
                     <Plan
-                        to="/#contact"
+                        to="https://creastel.notion.site/Les-offres-Skovel-eca8ffe8c0354c43b4f26733c78d2eee?pvs=4"
+                        target="_blank"
                         title="Site web"
                         image={
                             <StaticImage
@@ -163,10 +164,11 @@ const Main = () => {
                             />
                         }
                         description="Nous créons, hébergeons et référençons votre site internet : exemple."
-                        price="200€"
+                        price="300€"
                     />
                     <Plan
-                        to="/#contact"
+                        to="https://creastel.notion.site/Les-offres-Skovel-eca8ffe8c0354c43b4f26733c78d2eee?pvs=4"
+                        target="_blank"
                         title="Réseaux sociaux"
                         image={
                             <StaticImage
@@ -180,7 +182,8 @@ const Main = () => {
                         price="50€ / publication"
                     />
                     <Plan
-                        to="/#contact"
+                        to="https://creastel.notion.site/Les-offres-Skovel-eca8ffe8c0354c43b4f26733c78d2eee?pvs=4"
+                        target="_blank"
                         title="Inscriptions & résultats"
                         image={
                             <StaticImage
@@ -196,7 +199,7 @@ const Main = () => {
                 </PlanSection>
                 <ButtonUnstyled
                     to="/#contact"
-                    ariaLabel="Student program"
+                    ariaLabel="Sur mesure"
                     className="flex justify-center"
                 >
                     <span className="text-paletteBlue fill-paletteBlue">
@@ -246,7 +249,7 @@ const Main = () => {
                     answer="Notre gamme de services s'étend de la communication sur votre course aux opérations d'organisations. Nous pouvons mettre à disposition plusieurs outils pour vous aider à gérer votre évènement : système de communication avec les participants, bénévoles et partenaires (via mail, SMS de dernière minute, etc.), gestion des inscriptions, gestion des résultats, etc."
                 />
                 <FAQ
-                    question="Qui sommes nous ?"
+                    question="Qui êtes-vous ?"
                     answer={
                         <>
                             Skovel est une agence créée par Grégoire Thibaud, fondateur de  <u>
