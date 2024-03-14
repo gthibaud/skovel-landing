@@ -9,11 +9,11 @@ import { FAQ } from '../components/FAQ';
 import { Feature } from '../components/Feature';
 import { Footer } from '../components/Footer';
 import { Header } from '../components/Header';
+import { HeroSection } from '../components/Hero';
 import { Plan } from '../components/Plan';
 import { Problem } from '../components/Problem';
 import { CardSection } from '../components/Section/CardSection';
 import { PlanSection } from '../components/Section/PlanSection';
-import { BigTitle } from '../components/Typography/BigTitle';
 import { Body } from '../components/Typography/Body';
 import { SectionTitle } from '../components/Typography/SectionTitle';
 import { SubTitle } from '../components/Typography/SubTitle';
@@ -24,23 +24,8 @@ const Main = () => {
     return (
         <div className="flex flex-col align-center">
             <Header />
+            <HeroSection />
             <MainContainer>
-                <BigTitle>Communiquez avec <u>impact</u></BigTitle>
-                <SubTitle>
-                    <span>
-                        Ensemble, propulsons votre événement outdoor sur le web et les réseaux sociaux.
-                        <Sparkles className="fill-palettePurple" />
-                    </span>
-                </SubTitle>
-                <div className="flex justify-center px-4 mt-8">
-                    <TiltingContainer>
-                        <StaticImage
-                            className="max-w-screen-lg"
-                            src="../../static/images/desktop.png"
-                            alt="Desktop Airtable interface."
-                        />
-                    </TiltingContainer>
-                </div>
                 <SectionTitle>
                     <span>
                         Rendez-vous visible
@@ -245,20 +230,21 @@ const Main = () => {
                     </span>
                 </SectionTitle>
                 <FAQ
-                    question="Quels services proposez-vous ?"
-                    answer="Notre gamme de services s'étend de la communication sur votre course aux opérations d'organisations. Nous pouvons mettre à disposition plusieurs outils pour vous aider à gérer votre évènement : système de communication avec les participants, bénévoles et partenaires (via mail, SMS de dernière minute, etc.), gestion des inscriptions, gestion des résultats, etc."
-                />
-                <FAQ
                     question="Qui êtes-vous ?"
                     answer={
                         <>
-                            Skovel est une agence créée par Grégoire Thibaud, fondateur de  <u>
+                            Skovel est la division spécialisée dans la communication d'évènements outdoors de l'agence <u>
                                 <a href="https://creastel.com" target='_blank'>Creastel</a>
-                            </u>{' '} passionné de course à pied et de numérique. Discutons sur <u>
-                                <a href="https://www.linkedin.com/in/gregoire-thibaud/" target='_blank'>LinkedIn</a>
-                            </u>{' '}
+                            </u>. Depuis 2018, Creastel développe des services numériques innovants et uniques pour startups et entreprises. Découvrez nos réalisations sur <u> <a href="https://creastel.com" target='_blank'>notre site</a></u> !
+                            <br />
+                            <br />
+                            Vous souhaitez échanger sur votre projet ? N'hésitez pas à contacter Grégoire Thibaud par <u><a href="mailto:gregoire@skovel.com"> email</a></u> ou sur <u><a href="https://www.linkedin.com/in/gregoire-thibaud/" target='_blank'>LinkedIn</a></u>.
                         </>
                     }
+                />
+                <FAQ
+                    question="Quels services proposez-vous ?"
+                    answer="Notre gamme de services s'étend de la communication sur votre course aux opérations d'organisations. Nous pouvons mettre à disposition plusieurs outils pour vous aider à gérer votre évènement : système de communication avec les participants, bénévoles et partenaires (via mail, SMS de dernière minute, etc.), gestion des inscriptions, gestion des résultats, etc."
                 />
             </MainContainer>
             <Footer />

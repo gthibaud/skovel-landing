@@ -29,6 +29,8 @@
     "dependencies": {
         "@emotion/react": "^11.11.3",
         "@emotion/styled": "^11.11.0",
+        "clsx": "^2.1.0",
+        "framer-motion": "^11.0.13",
         "gatsby": "^5.13.1",
         "gatsby-plugin-google-fonts": "^1.0.1",
         "gatsby-plugin-google-tagmanager": "^5.13.1",
@@ -38,9 +40,11 @@
         "gatsby-plugin-sitemap": "^6.13.1",
         "gatsby-plugin-web-font-loader": "^1.0.4",
         "gthibaud-icons-react": "^0.0.83",
+        "mini-svg-data-uri": "^1.4.4",
         "react": "^18.2.0",
         "react-dom": "^18.2.0",
         "react-hot-toast": "^2.4.1",
+        "tailwind-merge": "^2.2.1",
         "vanilla-tilt": "^1.8.1"
     },
     "devDependencies": {
