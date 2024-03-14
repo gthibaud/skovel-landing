@@ -1,5 +1,6 @@
 import { StaticImage } from "gatsby-plugin-image";
 import { Sparkles } from "gthibaud-icons-react";
+import TextLoop from "react-text-loop";
 import { TiltingContainer } from "../Container/Titling";
 import { BigTitle } from "../Typography/BigTitle";
 import { SubTitle } from "../Typography/SubTitle";
@@ -10,7 +11,7 @@ export const HeroSection = () => {
             {/* Radial gradient for the container to give a faded look */}
             <div className="absolute pointer-events-none inset-0 flex items-center justify-center  bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
             <div className="z-20 bg-gradient-to-b">
-                <BigTitle>Communiquez avec <u>impact</u></BigTitle>
+                <BigTitle>Communiquez avec <TextLoop mask={false} fade={true} interval={4000}><u>impact</u><u>enthousiasme</u><u>énergie</u><u>efficacité</u></TextLoop></BigTitle>
                 <SubTitle>
                     <span>
                         Ensemble, propulsons votre événement outdoor sur le web et les réseaux sociaux.

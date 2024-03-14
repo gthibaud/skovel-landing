@@ -208,7 +208,6 @@ const Main = () => {
                                 Email: {' '}
                                 <a href="mailto:gregoire@skovel.com" className="text-paletteBlue fill-paletteBlue"><u>gregoire@skovel.com</u></a>
                             </Body>
-                            {/* <EmailForm /> */}
                         </div>
                         <div className="flex-1">
                             <TiltingContainer>

@@ -1,4 +1,4 @@
-import { Button } from '../Button/text';
+import { ButtonBordered } from '../Button/bordered';
 import { ButtonUnstyled } from '../Button/unstyled';
 
 export const Header = () => {
@@ -16,12 +16,9 @@ export const Header = () => {
                     </ButtonUnstyled>
                 </div>
                 <div className="flex justify-end shrink-0">
-                    <Button
-                        to="/#contact"
-                        className="bg-paletteBlue hover:bg-palettePurple rounded-md"
-                    >
+                    <ButtonBordered to="/#contact">
                         Contactez-nous !
-                    </Button>
+                    </ButtonBordered>
                 </div>
             </nav>
         </header>
