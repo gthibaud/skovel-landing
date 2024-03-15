@@ -34,7 +34,7 @@ export const HeroSection = () => {
                             <StaticImage
                                 className="max-w-screen-lg"
                                 src="../../../static/images/desktop.png"
-                                alt="Desktop Airtable interface."
+                                alt="CapybaRun"
                                 style={{ cursor: 'pointer' }}
                             />
                         </a>

@@ -53,12 +53,25 @@ export default Legals;
 // Head is automatically injected in the page by Gatsby
 export const Head = () => (
     <>
-        <html lang="en" />
+        <html lang="fr" />
         <title>Skovel - Mentions légales</title>
         <meta
             name="description"
-            content="Skovel - Mentions légales"
+            content="Skovel vous accompagne dans la mise en place de la communication de votre course outdoor. Site web, réseaux sociaux, emails... discutons de votre projet !"
         />
+        <meta name="viewport" content="width=device-width" />
+        <meta name="theme-color" content="#FFFFFF" />
+        <meta property="og:title" content="Skovel - Mentions légales" />
+        <meta property="og:description" content="Skovel vous accompagne dans la mise en place de la communication de votre course outdoor. Site web, réseaux sociaux, emails... discutons de votre projet !" />
+        <meta property="og:image" content="https://skovel.com/images/preview.png" />
+        <meta property="og:image:alt" content="Skovel website preview." />
+        <meta name="twitter:title" content="Skovel - Mentions légales" />
+        <meta name="twitter:description" content="Skovel vous accompagne dans la mise en place de la communication de votre course outdoor. Site web, réseaux sociaux, emails... discutons de votre projet !" />
+        <meta name="twitter:url" content="https://skovel.com/" />
+        <meta name="twitter:image:src" content="https://skovel.com/images/preview.png" />
+        <meta name="twitter:image:alt" content="Skovel website preview" />
+        <meta name="twitter:creator" content="@ThibaudGrgoire1" />
+        <meta name="twitter:site" content="@ThibaudGrgoire1" />
         <meta charSet="utf-8" />
     </>
 );
