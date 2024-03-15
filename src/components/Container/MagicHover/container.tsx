@@ -16,16 +16,18 @@ export const MagicHoverContainer: FC<MagicHoverContainerProps> = ({ children }) 
     // card section. Then, set the CSS variables to those values.
     const onMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
         // for (const card of children) {
-        for (const card of document.getElementsByClassName('magic-card')) {
-            const rect = card.getBoundingClientRect(),
-                x = e.clientX - rect.left,
-                y = e.clientY - rect.top;
+        if (typeof window !== `undefined`) {
+            for (const card of document.getElementsByClassName('magic-card')) {
+                const rect = card.getBoundingClientRect(),
+                    x = e.clientX - rect.left,
+                    y = e.clientY - rect.top;
 
-            // Cast to HTMLElement to access style property
-            const cardElement = card as HTMLElement;
+                // Cast to HTMLElement to access style property
+                const cardElement = card as HTMLElement;
 
-            cardElement.style.setProperty('--mouse-x', `${x}px`);
-            cardElement.style.setProperty('--mouse-y', `${y}px`);
+                cardElement.style.setProperty('--mouse-x', `${x}px`);
+                cardElement.style.setProperty('--mouse-y', `${y}px`);
+            }
         }
     };
 
