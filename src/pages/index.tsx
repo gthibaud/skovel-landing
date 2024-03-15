@@ -188,7 +188,7 @@ const Main = () => {
                     className="flex justify-center"
                 >
                     <span className="text-paletteBlue fill-paletteBlue">
-                        Besoin d'un devis sur mesure ? Contactez-nous pour en discuter
+                        Un projet en tête ? Contactez-nous pour en discuter
                         <ChevronRight />
                     </span>
                 </ButtonUnstyled>
@@ -240,6 +240,10 @@ const Main = () => {
                             Vous souhaitez échanger sur votre projet ? N'hésitez pas à contacter Grégoire Thibaud par <u><a href="mailto:gregoire@skovel.com"> email</a></u> ou sur <u><a href="https://www.linkedin.com/in/gregoire-thibaud/" target='_blank'>LinkedIn</a></u>.
                         </>
                     }
+                />
+                <FAQ
+                    question="Pourquoi choisir Skovel ?"
+                    answer="Nos services sont spécialement conçus pour des organisateurs d'évènements avec des budgets limités et / ou n'ayant pas les compétences en communication. Que vous ayez besoin d'un simple site web ou d'une gestion complète de votre communication clé en main, nous vous accompagnons avec un degré de personnalisation sur mesure. À l'inverse d'une agence marketing généraliste, nous avons une expertise spécifique dans la communication d'évènements sportifs et outdoor."
                 />
                 <FAQ
                     question="Quels services proposez-vous ?"

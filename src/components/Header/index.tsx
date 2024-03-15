@@ -10,7 +10,7 @@ export const Header = () => {
                         to="/"
                         ariaLabel="Home"
                     >
-                        <p className="font-semibold text-xl text-left tracking-tight">
+                        <p className="font-semibold text-2xl text-left tracking-tight">
                             Skovel
                         </p>
                     </ButtonUnstyled>

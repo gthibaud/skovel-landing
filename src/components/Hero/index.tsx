@@ -10,15 +10,21 @@ export const HeroSection = () => {
         <div className="w-full bg-white bg-dot-black/[0.2] relative flex items-center justify-center">
             {/* Radial gradient for the container to give a faded look */}
             <div className="absolute pointer-events-none inset-0 flex items-center justify-center  bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
-            <div className="z-20 bg-gradient-to-b">
-                <BigTitle>Communiquez avec <TextLoop mask={false} fade={true} interval={4000}><u>impact</u><u>enthousiasme</u><u>énergie</u><u>efficacité</u></TextLoop></BigTitle>
+            <div className="z-20 bg-gradient-to-b px-6 lg:px-0">
+                <BigTitle>Communiquez avec <br className="md:hidden" /><TextLoop mask={false} fade={true} interval={4000}>
+                    <u className="tracking-tight inline from-[#FF1CF7] to-[#b249f8] bg-clip-text text-transparent bg-gradient-to-b">impact</u>
+                    <u className="tracking-tight inline from-[#FF1CF7] to-[#b249f8] bg-clip-text text-transparent bg-gradient-to-b">enthousiasme</u>
+                    <u className="tracking-tight inline from-[#FF1CF7] to-[#b249f8] bg-clip-text text-transparent bg-gradient-to-b">passion</u>
+                    <u className="tracking-tight inline from-[#FF1CF7] to-[#b249f8] bg-clip-text text-transparent bg-gradient-to-b">efficacité</u>
+                </TextLoop>
+                </BigTitle>
                 <SubTitle>
                     <span>
                         Ensemble, propulsons votre événement outdoor sur le web et les réseaux sociaux.
                         <Sparkles className="fill-palettePurple" />
                     </span>
                 </SubTitle>
-                <div className="flex justify-center px-4 mt-8">
+                <div className="flex justify-center px-0 mt-8">
                     <TiltingContainer glare>
                         <a href="https://capybarun.skovel.com" target="_blank">
                             <StaticImage
