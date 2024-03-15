@@ -7,7 +7,7 @@ type TitleProps = {
 
 export const SubTitle = ({ children, align = 'center' }: TitleProps) => {
     return (
-        <p className={`text-xl font-medium text-body text-${align} mx-auto max-w-lg my-4`}>
+        <p className={`text-xl text-gray-500 font-medium text-${align} mx-auto max-w-xl my-4`}>
             {children}
         </p>
     );

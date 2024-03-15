@@ -1,5 +1,5 @@
 import { StaticImage } from 'gatsby-plugin-image';
-import { ChevronRight, LockDesktop, Megaphone, MegaphoneFill, Sparkles } from 'gthibaud-icons-react';
+import { ChevronRight, Megaphone, Sparkles } from 'gthibaud-icons-react';
 import { Toaster } from 'react-hot-toast';
 import { ButtonUnstyled } from '../components/Button/unstyled';
 import { Columns } from '../components/Container/Columns';
@@ -16,6 +16,7 @@ import { CardSection } from '../components/Section/CardSection';
 import { PlanSection } from '../components/Section/PlanSection';
 import { Body } from '../components/Typography/Body';
 import { SectionTitle } from '../components/Typography/SectionTitle';
+import { SectionTitleStyled } from '../components/Typography/SectionTitleStyled';
 import { SubTitle } from '../components/Typography/SubTitle';
 
 const BACKGROUND_DEFAULT = '#FFFFFF';
@@ -26,12 +27,11 @@ const Main = () => {
             <Header />
             <HeroSection />
             <MainContainer>
-                <SectionTitle>
-                    <span>
-                        Rendez-vous visible
-                        <MegaphoneFill className="fill-paletteRed" />
-                    </span>
-                </SectionTitle>
+                <SectionTitleStyled
+                    part1="Rendez-vous"
+                    part2="visibles"
+                    confettiEmojis={['📢', '🥁', '👀']}
+                />
                 <SubTitle>
                     Faites du bruit ! Votre évènement mérite d'être connu et partagé.
                 </SubTitle>
@@ -76,12 +76,15 @@ const Main = () => {
                         description="Site web, réseaux sociaux, emails... atteignez chacun."
                     />
                 </CardSection>
-                <SectionTitle>
-                    <span>
-                        Nous partageons notre expertise
-                        <LockDesktop className="fill-paletteBlue" />
-                    </span>
-                </SectionTitle>
+                <SectionTitleStyled
+                    part1="La course, notre"
+                    part2="expertise"
+                    confettiEmojis={['🤓', '🏃🏻', '🏊‍♀️', '🚴🏻‍♀️']}
+                    colorsVariant='green'
+                />
+                <SubTitle>
+                    Vous n'avez pas la compétence ou le temps pour gérer votre communication ? Ça tombe bien, c'est notre cœur de métier !
+                </SubTitle>
                 <Feature
                     image={
                         <StaticImage
@@ -129,7 +132,13 @@ const Main = () => {
                     title="Des outils pour vous faire gagner du temps"
                     description="Nous intégrons sur votre site des modules d'inscription, gestion des participants et affichage des résultats en quelques clics. Comptez sur nos outils de communication opérationnelle pour simplifier l'organisation de votre évènement."
                 />
-                <SectionTitle>Nos tarifs (sans astérisques)</SectionTitle>
+                <SectionTitleStyled
+                    part1="Nos tarifs (sans"
+                    part2="astérisques"
+                    part3=")"
+                    confettiEmojis={['🤓', '🏃🏻', '🏊‍♀️', '🚴🏻‍♀️']}
+                    colorsVariant='orange'
+                />
                 <SubTitle>
                     Pas d'engagement ou de coûts cachés
                     <br /> nous avons une solution pour chaque budget !
