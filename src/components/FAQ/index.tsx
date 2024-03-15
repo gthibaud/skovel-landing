@@ -26,14 +26,14 @@ export const FAQ: FC<FAQProps> = ({ question, answer }) => {
     return (
         <div className="flex flex-col gap-6">
             <div
-                className="flex flex-col gap-4 w-full hover:bg-backgroundVariant pt-4 cursor-pointer transition rounded-lg px-4"
+                className="flex flex-col gap-4 w-full hover:bg-backgroundVariant pt-4 cursor-pointer transition rounded-lg px-4 hover:bg-gray-100 hover:scale-101"
                 onClick={handleOpen}
             >
                 <div className="flex flex-row justify-between gap-4 w-full items-center">
                     <h3 className="text-xl font-medium text-primary">{question}</h3>
                     <PlusCircle
                         size={26}
-                        className={`transition shrink-0`}
+                        className={`transition shrink-0 fill-gray-500`}
                         style={{
                             transform: isOpen ? 'rotate(45deg)' : 'rotate(0deg)',
                         }}

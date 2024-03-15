@@ -24,7 +24,11 @@ export const HeroSection = () => {
                         <Sparkles className="fill-palettePurple" />
                     </span>
                 </SubTitle>
-                <div className="flex justify-center px-0 mt-8">
+                <div className="absolute w-[200px] text-center -rotate-12 z-10 lg:mt-0 mt-12">
+                    <p className="bg-white/90 backdrop-blur-sm p-2 rounded text-gray-600">exemple de site web avec Skovel :</p>
+                    <StaticImage src="../../../static/assets/arrow-down-right.svg" alt="arrow" width={100} />
+                </div>
+                <div className="flex justify-center px-0 lg:mt-12 mt-20">
                     <TiltingContainer glare>
                         <a href="https://capybarun.skovel.com" target="_blank">
                             <StaticImage

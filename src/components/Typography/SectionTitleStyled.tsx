@@ -32,7 +32,7 @@ export const SectionTitleStyled: FC<TitleProps> = (props) => {
             case "orange":
                 return "from-[#FF705B] to-[#FFB457]";
             case "pink":
-                return "from-[#FF7EB3] to-[#FF3D7E]";
+                return "from-[#FF1CF7] to-[#b249f8]";
             case "green":
                 return "from-[#6FEE8D] to-[#17c964]";
             default:
@@ -43,7 +43,7 @@ export const SectionTitleStyled: FC<TitleProps> = (props) => {
     return (
         <div className='flex items-center justify-center'>
             <div className="flex flex-col items-center justify-center">
-                <h2 className="text-4xl text-primary font-bold text-center mt-20 mb-10 hover:scale-110 transition-all">
+                <h2 className="text-4xl text-primary font-bold text-center mt-20 mb-6 hover:scale-110 transition-all">
                     {part1} <span onMouseEnter={() => setActive(true)} onMouseLeave={() => setActive(false)} className={`tracking-tight inline ${generateColorsVariant()} bg-clip-text text-transparent bg-gradient-to-b`}>{part2}</span>{part3}
                     {Icon ? <Icon className={`tracking-tight inline ${generateColorsVariant()} bg-clip-text text-transparent bg-gradient-to-b`} /> : null}
                 </h2>

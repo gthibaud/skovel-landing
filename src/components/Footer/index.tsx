@@ -12,7 +12,7 @@ export const Footer = () => {
                     Contact
                 </a>
                 <Link
-                    to="/"
+                    to="/legals"
                     className="hover:underline"
                 >
                     Mentions légales

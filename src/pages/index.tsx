@@ -1,7 +1,8 @@
+import { Link } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
-import { ChevronRight, Megaphone, Sparkles } from 'gthibaud-icons-react';
+import { ChevronRight, Megaphone } from 'gthibaud-icons-react';
 import { Toaster } from 'react-hot-toast';
-import { ButtonUnstyled } from '../components/Button/unstyled';
+import { ButtonBordered } from '../components/Button/bordered';
 import { Columns } from '../components/Container/Columns';
 import { MainContainer } from '../components/Container/Main';
 import { TiltingContainer } from '../components/Container/Titling';
@@ -15,7 +16,6 @@ import { Problem } from '../components/Problem';
 import { CardSection } from '../components/Section/CardSection';
 import { PlanSection } from '../components/Section/PlanSection';
 import { Body } from '../components/Typography/Body';
-import { SectionTitle } from '../components/Typography/SectionTitle';
 import { SectionTitleStyled } from '../components/Typography/SectionTitleStyled';
 import { SubTitle } from '../components/Typography/SubTitle';
 
@@ -46,34 +46,34 @@ const Main = () => {
                                 backgroundColor={BACKGROUND_DEFAULT}
                             />
                         }
-                        title="Référencement"
-                        description="Rendze votre évènement à la portée de chacun en quelques clics."
+                        title="L'information de référence"
+                        description="Rendez l'information à jour pour tous, grâce à un site internet central et unique."
                     />
                     <Problem
                         image={
                             <StaticImage
-                                src="../../static/images/coffee.jpg"
+                                src="../../static/images/reach.png"
                                 alt="Coffee image"
                                 height={100}
                                 placeholder="none"
                                 backgroundColor={BACKGROUND_DEFAULT}
                             />
                         }
-                        title="La bonne information"
-                        description="Partagez les informations essentielles et à jour."
+                        title="Atteignez chaque acteur"
+                        description="Augmenter l'affluence, mobiliser des bénévoles, partenaires, etc. nous avons une solution pour vous."
                     />
                     <Problem
                         image={
                             <StaticImage
-                                src="../../static/images/error.jpg"
+                                src="../../static/images/paperplane.png"
                                 alt="Error image"
                                 height={100}
                                 placeholder="none"
                                 backgroundColor={BACKGROUND_DEFAULT}
                             />
                         }
-                        title="Dans l'ère du temps"
-                        description="Site web, réseaux sociaux, emails... atteignez chacun."
+                        title="À la page"
+                        description="Site web, réseaux sociaux, emails... utilisons le bon canal de communication pour chaque interlocuteur."
                     />
                 </CardSection>
                 <SectionTitleStyled
@@ -88,7 +88,7 @@ const Main = () => {
                 <Feature
                     image={
                         <StaticImage
-                            src="../../static/images/clock.jpg"
+                            src="../../static/images/computer.jpg"
                             alt="Clock image"
                             height={120}
                             placeholder="none"
@@ -99,15 +99,15 @@ const Main = () => {
                     title="Visibilité en ligne"
                     description={
                         <>
-                            Nous créons votre site internet à votre image, parfaitement référencé sur Google et les calendriers sportifs. Nous vous accompagnons pour frapper fort sur les réseaux sociaux et par email.
+                            Nous créons votre site internet à votre image, parfaitement référencé sur Google et les calendriers sportifs. Selon vos besoins, nous vous accompagnons pour frapper fort sur les réseaux sociaux et par email.
                         </>
                     }
                 />
                 <Feature
                     image={
                         <StaticImage
-                            src="../../static/images/files.jpg"
-                            alt="Files image"
+                            src="../../static/images/notes.png"
+                            alt="Checklist image"
                             height={120}
                             placeholder="none"
                             backgroundColor={BACKGROUND_DEFAULT}
@@ -121,8 +121,8 @@ const Main = () => {
                 <Feature
                     image={
                         <StaticImage
-                            src="../../static/images/computer.jpg"
-                            alt="Computer image"
+                            src="../../static/images/tools.png"
+                            alt="Tools image"
                             height={120}
                             placeholder="none"
                             backgroundColor={BACKGROUND_DEFAULT}
@@ -130,13 +130,13 @@ const Main = () => {
                         />
                     }
                     title="Des outils pour vous faire gagner du temps"
-                    description="Nous intégrons sur votre site des modules d'inscription, gestion des participants et affichage des résultats en quelques clics. Comptez sur nos outils de communication opérationnelle pour simplifier l'organisation de votre évènement."
+                    description="Inscriptions, gestion des participants, FAQ dynamique, communication de crise, affichage des résultats, etc. Comptez sur nos outils pour simplifier l'organisation de votre évènement."
                 />
                 <SectionTitleStyled
                     part1="Nos tarifs (sans"
                     part2="astérisques"
                     part3=")"
-                    confettiEmojis={['🤓', '🏃🏻', '🏊‍♀️', '🚴🏻‍♀️']}
+                    confettiEmojis={['']}
                     colorsVariant='orange'
                 />
                 <SubTitle>
@@ -157,8 +157,9 @@ const Main = () => {
                                 placeholder="none"
                             />
                         }
-                        description="Nous créons, hébergeons et référençons votre site internet : exemple."
-                        price="300€"
+                        description={<span>Nous créons, hébergeons et référençons votre site internet.<br />Exemple: <Link to="https://capybarun.skovel.com" className='underline'>CapybaRun</Link></span>}
+                        price="500 € / site"
+                        priceDescription="gratuit si vous utilisez notre module d'inscription"
                     />
                     <Plan
                         to="https://creastel.notion.site/Les-offres-Skovel-eca8ffe8c0354c43b4f26733c78d2eee?pvs=4"
@@ -172,8 +173,9 @@ const Main = () => {
                                 placeholder="none"
                             />
                         }
-                        description="Nous publions pour vous sur les réseaux sociaux et par email, pour une communication efficace."
-                        price="50€ / publication"
+                        description="Nous définission votre stratégie sur les réseaux et autres canaux pour une communication optimale."
+                        price="500 € / stratégie"
+                        priceDescription="création et publication des contenus en option"
                     />
                     <Plan
                         to="https://creastel.notion.site/Les-offres-Skovel-eca8ffe8c0354c43b4f26733c78d2eee?pvs=4"
@@ -188,25 +190,26 @@ const Main = () => {
                             />
                         }
                         description="Utilisez notre module d'inscription et de gestion des participants pour votre évènement."
-                        price="1€ +2% / participant"
+                        price="1€ + 2% / participant"
+                        priceDescription='inclut un CRM et module de communication'
                     />
                 </PlanSection>
-                <ButtonUnstyled
-                    to="/#contact"
-                    ariaLabel="Sur mesure"
-                    className="flex justify-center"
-                >
-                    <span className="text-paletteBlue fill-paletteBlue">
-                        Un projet en tête ? Contactez-nous pour en discuter
+                <div className="flex justify-center">
+                    <ButtonBordered
+                        to="https://creastel.notion.site/Les-offres-Skovel-eca8ffe8c0354c43b4f26733c78d2eee?pvs=4"
+                        target="_blank"
+                    >
+                        Nos offres en détail
                         <ChevronRight />
-                    </span>
-                </ButtonUnstyled>
-                <SectionTitle>
-                    <span id="contact">
-                        Discutons de votre projet !
-                        <Sparkles className="fill-palettePurple" />
-                    </span>
-                </SectionTitle>
+                    </ButtonBordered>
+                </div>
+                <SectionTitleStyled
+                    part1=""
+                    part2="Discutons"
+                    part3=" de votre projet !"
+                    confettiEmojis={['✨', '🙌🏻', '🥇', '🖥️']}
+                    colorsVariant='pink'
+                />
                 <div>
                     <Columns columnsNumber={2}>
                         <div className="flex flex-col flex-1 gap-4">
@@ -231,12 +234,10 @@ const Main = () => {
                         </div>
                     </Columns>
                 </div>
-                <SectionTitle>
-                    <span>
-                        FAQ
-                        <Megaphone className="fill-paletteBlue" />
-                    </span>
-                </SectionTitle>
+                <SectionTitleStyled
+                    part1={<span>FAQ<Megaphone className="fill-paletteBlue" /></span>}
+                    confettiEmojis={[]}
+                />
                 <FAQ
                     question="Qui êtes-vous ?"
                     answer={
@@ -256,7 +257,7 @@ const Main = () => {
                 />
                 <FAQ
                     question="Quels services proposez-vous ?"
-                    answer="Notre gamme de services s'étend de la communication sur votre course aux opérations d'organisations. Nous pouvons mettre à disposition plusieurs outils pour vous aider à gérer votre évènement : système de communication avec les participants, bénévoles et partenaires (via mail, SMS de dernière minute, etc.), gestion des inscriptions, gestion des résultats, etc."
+                    answer="Notre gamme de services s'étend de la communication sur votre course (avant, pendant et après course) aux opérations d'organisations. Nous pouvons mettre à disposition plusieurs outils pour vous aider à gérer votre évènement : système de communication avec les participants, bénévoles et partenaires (via mail, SMS de dernière minute, etc.), gestion des inscriptions, mise à disposition des résultats, etc."
                 />
             </MainContainer>
             <Footer />
