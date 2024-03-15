@@ -16,7 +16,7 @@ type PlanProps = {
 
 export const Plan = ({ image, title, description, price, to, target, priceDescription }: PlanProps) => {
     return (
-        <TiltingContainer className="flex-1 rounded-lg bg-surfaceSecondary border-strokePrimary border-2">
+        <TiltingContainer className="flex-1 rounded-xl shadow-card border-strokePrimary  border-[1px]">
             <Link
                 to={to || "/"}
                 target={target}

@@ -48,7 +48,7 @@ export const FAQ: FC<FAQProps> = ({ question, answer }) => {
                 }}
                 className={`overflow-hidden transition-all duration-200 px-4`}
             >
-                <Body className="pb-4">{answer}</Body>
+                <Body className="pb-4 leading-relaxed">{answer}</Body>
             </div>
         </div>
     );

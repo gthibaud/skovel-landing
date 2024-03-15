@@ -59,7 +59,7 @@ const CardContent = styled.div((props: any) => ({
 export const MagicHoverCard: FC<MagicHoverCardProps> = (props) => {
     const {
         glare,
-        glareColor = 'rgba(255, 255, 255, 0.5)',
+        glareColor = 'rgba(255, 28, 247, 0.2)',
         borderColorInactive = 'transparent',
         borderColor = 'white',
         borderRadius = '10px',

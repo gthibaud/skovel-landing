@@ -133,15 +133,14 @@ const Main = () => {
                     description="Inscriptions, gestion des participants, FAQ dynamique, communication de crise, affichage des résultats, etc. Comptez sur nos outils pour simplifier l'organisation de votre évènement."
                 />
                 <SectionTitleStyled
-                    part1="Nos tarifs (sans"
-                    part2="astérisques"
-                    part3=")"
+                    part1="Nos"
+                    part2="tarifs"
+                    part3=" *"
                     confettiEmojis={['']}
                     colorsVariant='orange'
                 />
                 <SubTitle>
-                    Pas d'engagement ou de coûts cachés
-                    <br /> nous avons une solution pour chaque budget !
+                    * Garantis sans astériques ni mauvaises surprises, <br />nous avons une solution pour chaque budget !
                 </SubTitle>
                 <br />
                 <PlanSection>
@@ -214,12 +213,24 @@ const Main = () => {
                     <Columns columnsNumber={2}>
                         <div className="flex flex-col flex-1 gap-4">
                             <Body>
-                                Contactez Grégoire pour échanger sur votre projet et vous étudier comment Skovel pourra vous accompagner au mieux.
+                                Encore au stade de projet ou une course déjà rodée ? <br />Peu importe votre niveau d'avancement, commençons à échanger dès aujourd'hui !
                             </Body>
-                            <Body>
-                                Email: {' '}
-                                <a href="mailto:gregoire@skovel.com" className="text-paletteBlue fill-paletteBlue"><u>gregoire@skovel.com</u></a>
-                            </Body>
+                            <div className='flex flex-row gap-6 items-center'>
+                                <StaticImage
+                                    src="../../static/images/gregoire.jpg"
+                                    alt="Grégoire Thibaud"
+                                    placeholder="none"
+                                    className="rounded-full w-24 h-24 border-4 border-white shadow-lg"
+                                />
+                                <div className='flex flex-col gap-1'>
+                                    <Body className='font-semibold'>
+                                        Grégoire Thibaud
+                                    </Body>
+                                    <Body>
+                                        <a href="mailto:gregoire@skovel.com" className="text-paletteBlue fill-paletteBlue"><u>gregoire@skovel.com</u></a>
+                                    </Body>
+                                </div>
+                            </div>
                         </div>
                         <div className="flex-1">
                             <TiltingContainer>
@@ -262,7 +273,7 @@ const Main = () => {
             </MainContainer>
             <Footer />
             <Toaster position="bottom-right" />
-        </div>
+        </div >
     );
 };
 

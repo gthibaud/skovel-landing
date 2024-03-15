@@ -11,12 +11,13 @@ export const HeroSection = () => {
             {/* Radial gradient for the container to give a faded look */}
             <div className="absolute pointer-events-none inset-0 flex items-center justify-center  bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
             <div className="z-20 bg-gradient-to-b px-6 lg:px-0">
-                <BigTitle>Communiquez avec <br className="md:hidden" /><TextLoop mask={false} fade={true} interval={4000}>
-                    <u className="tracking-tight inline from-[#FF1CF7] to-[#b249f8] bg-clip-text text-transparent bg-gradient-to-b">impact</u>
-                    <u className="tracking-tight inline from-[#FF1CF7] to-[#b249f8] bg-clip-text text-transparent bg-gradient-to-b">enthousiasme</u>
-                    <u className="tracking-tight inline from-[#FF1CF7] to-[#b249f8] bg-clip-text text-transparent bg-gradient-to-b">passion</u>
-                    <u className="tracking-tight inline from-[#FF1CF7] to-[#b249f8] bg-clip-text text-transparent bg-gradient-to-b">efficacité</u>
-                </TextLoop>
+                <BigTitle>Communiquez avec <br className="md:hidden" />
+                    <TextLoop mask={false} fade={true} interval={4000} className="h-[58px] overflow-clip">
+                        <u className="tracking-tight inline from-[#FF1CF7] to-[#b249f8] bg-clip-text text-transparent bg-gradient-to-b">impact</u>
+                        <u className="tracking-tight inline from-[#FF1CF7] to-[#b249f8] bg-clip-text text-transparent bg-gradient-to-b">enthousiasme</u>
+                        <u className="tracking-tight inline from-[#FF1CF7] to-[#b249f8] bg-clip-text text-transparent bg-gradient-to-b">passion</u>
+                        <u className="tracking-tight inline from-[#FF1CF7] to-[#b249f8] bg-clip-text text-transparent bg-gradient-to-b">efficacité</u>
+                    </TextLoop>
                 </BigTitle>
                 <SubTitle>
                     <span>
@@ -25,16 +26,18 @@ export const HeroSection = () => {
                     </span>
                 </SubTitle>
                 <div className="absolute w-[200px] text-center -rotate-12 z-10 lg:mt-0 mt-12">
-                    <p className="bg-white/90 backdrop-blur-sm p-2 rounded text-gray-600">exemple de site web avec Skovel :</p>
-                    <StaticImage src="../../../static/assets/arrow-down-right.svg" alt="arrow" width={100} />
+                    <p className="bg-white/90 backdrop-blur-sm p-2 rounded text-gray-600 shadow-2xl">exemple de site web avec Skovel :</p>
+                    <StaticImage placeholder="none" src="../../../static/assets/arrow-down-right.svg" alt="arrow" width={100} />
                 </div>
                 <div className="flex justify-center px-0 lg:mt-12 mt-20">
                     <TiltingContainer glare>
                         <a href="https://capybarun.skovel.com" target="_blank">
                             <StaticImage
-                                className="max-w-screen-lg"
+                                className="max-w-screen-lg shadow-2xl"
                                 src="../../../static/images/desktop.png"
                                 alt="CapybaRun"
+                                placeholder="none"
+                                backgroundColor="transparent"
                                 style={{ cursor: 'pointer' }}
                             />
                         </a>

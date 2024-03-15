@@ -28,6 +28,9 @@ module.exports = {
                 surfacePrimary: '#FFFFFF',
                 strokePrimary: '#E0E0E1',
             },
+            boxShadow: {
+                'card': '0 0px 24px 0px rgba(0, 0, 0, 0.1)',
+            }
         },
     },
     plugins: [
