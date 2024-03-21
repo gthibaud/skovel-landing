@@ -16,7 +16,7 @@ export const HeroSection = () => {
                         <u className="tracking-tight inline from-[#FF1CF7] to-[#b249f8] bg-clip-text text-transparent bg-gradient-to-b">impact</u>
                         <u className="tracking-tight inline from-[#FF1CF7] to-[#b249f8] bg-clip-text text-transparent bg-gradient-to-b">enthousiasme</u>
                         <u className="tracking-tight inline from-[#FF1CF7] to-[#b249f8] bg-clip-text text-transparent bg-gradient-to-b">passion</u>
-                        <u className="tracking-tight inline from-[#FF1CF7] to-[#b249f8] bg-clip-text text-transparent bg-gradient-to-b">efficacité</u>
+                        <u className="tracking-tight inline from-[#FF1CF7] to-[#b249f8] bg-clip-text text-transparent bg-gradient-to-b">simplicité</u>
                     </TextLoop>
                 </BigTitle>
                 <SubTitle>
