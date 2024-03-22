@@ -208,6 +208,7 @@ const Main = () => {
                     part3=" de votre projet !"
                     confettiEmojis={['✨', '🙌🏻', '🥇', '🖥️']}
                     colorsVariant='pink'
+                    id='contact'
                 />
                 <div>
                     <Columns columnsNumber={2}>

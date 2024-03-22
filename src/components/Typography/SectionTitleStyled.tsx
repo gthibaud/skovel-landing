@@ -8,16 +8,17 @@ type TitleProps = {
     icon?: ElementType;
     confettiEmojis: string[];
     colorsVariant?: 'blue' | 'orange' | 'pink' | 'green';
+    id?: string;
 };
 
 export const SectionTitleStyled: FC<TitleProps> = (props) => {
-    const { part1 = "", part2 = "", part3 = "", icon: Icon = undefined, confettiEmojis, colorsVariant = "blue" } = props;
+    const { part1 = "", part2 = "", part3 = "", icon: Icon = undefined, confettiEmojis, colorsVariant = "blue", id } = props;
 
     // On hover, confetti will be activated
     const [active, setActive] = useState(false);
     useEffect(() => {
         if (active) {
-            jsConfetti.addConfetti({
+            jsConfetti?.addConfetti({
                 emojis: confettiEmojis,
                 confettiNumber: 50,
                 emojiSize: 50,
@@ -41,7 +42,7 @@ export const SectionTitleStyled: FC<TitleProps> = (props) => {
     }
 
     return (
-        <div className='flex items-center justify-center'>
+        <div className='flex items-center justify-center' id={id}>
             <div className="flex flex-col items-center justify-center">
                 <h2 className="text-4xl text-primary font-bold text-center mt-20 mb-6 hover:scale-110 transition-all">
                     {part1} <span onMouseEnter={() => setActive(true)} onMouseLeave={() => setActive(false)} className={`tracking-tight inline ${generateColorsVariant()} bg-clip-text text-transparent bg-gradient-to-b`}>{part2}</span>{part3}
